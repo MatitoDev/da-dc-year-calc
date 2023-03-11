@@ -30,7 +30,8 @@ def calc():
     date_today = date.today()
     delta = date_today - date_input
     calyear = (((int(delta.days) / 30.5) / 6) + 1)
-    year.config(text=f"Der User ist am {day_inp}.{month_inp}.{year_inp} gejoint und bekommt deshalb die Jahr {str(round(calyear))} Rolle")
+    calyear = str(calyear).split('.')
+    year.config(text=f"Der User ist am {day_inp}.{month_inp}.{year_inp} gejoint und bekommt deshalb die Jahr {calyear[0]} Rolle")
 
 
 

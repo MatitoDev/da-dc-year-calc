@@ -12,8 +12,9 @@ join_tag = input('Join Tag: ')
 date_input = date(int(join_year), int(join_monat), int(join_tag))
 date_today = date.today()
 delta = date_today - date_input
-year = (((int(delta.days) /30.5) / 6) + 1)
+year = (((int(delta.days) /30) / 6) + 1)
 
+year = str(year).split('.')
 
-print(f'\nDer User bekommt die Rolle Jahr {round(year)}')
+print(f'\nDer User bekommt die Rolle Jahr {year[0]}')
 input("\n \nDrücke Enter um das Programm zu beenden")
