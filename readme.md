@@ -12,5 +12,6 @@ Sollte dies der Fall sein erstellt bitte einen [Issue](https://github.com/matito
  3. Entpacke die Datei
  4. Öffne deine Eingabeaufforderung in dem du `Win` drückst und nach `cmd` suchst
  5. Gib `cd` ein und dahinter den Pfad zum entpackten Ordner. z.B. `cd C:\Users\<USERNAME>\Downloads\da-dc-year-calc-V1`
+    1. Sollte sich der Runtergeladene Ordner auf einer andern Festplatte befinden kannst du zu dieser wechseln, in dem du den entsprechenden Laufwerksbuchstaben eingibst z.B. `E:` 
  6. Gib `py -m pip install -r reqirements.txt` ein 
  7. Öffne die `gui.py` Datei um den Rechner zu starten
