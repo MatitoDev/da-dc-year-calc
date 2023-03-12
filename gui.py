@@ -2,6 +2,7 @@ from tkinter import *
 from tkcalendar import Calendar
 from datetime import date
 import time
+from dateutil import relativedelta
 
 t = time.localtime()
 
@@ -32,8 +33,8 @@ def calc():
     if date_ceate > date_input:
         year.config(text=f"Der Discord hat zu dem eingegebenen Zeitpunkt noch nicht existiert")
         return
-    delta = date_today - date_input
-    calyear = (((int(delta.days) / 30.5) / 6) + 1)
+    delta = relativedelta.relativedelta(date_today, date_input)
+    calyear = (int(delta.months + (delta.years * 12)) / 6) +1
     calyear = str(calyear).split('.')
     if calyear[0] < '0':
         year.config(text=f"Das eingegebene Datum liegt in der Zukunft")
