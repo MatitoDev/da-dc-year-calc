@@ -1,5 +1,8 @@
 # DA-Discord Jahresberechner
 
+Sollte sich das programm um einige Tage verrechnen bitte ich das zu entschuldigen.
+Sollte dies der Fall sein erstellt bitte einen [Issue](https://github.com/matito-dev/da-dc-year-calc/issues/new).
+
 ## Installation
 
  1. Installiere Python 3.10
